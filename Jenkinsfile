@@ -3,8 +3,7 @@ node {
 	   sh 'git clone https://github.com/kameshyuva/bankwebapp.git . '
     }
     stage('Compile') { 
-	  withMaven {
+	    maven: 'maven'
 	    sh "mvn clean install"
-	  }
     } 
 }
