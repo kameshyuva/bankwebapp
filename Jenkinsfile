@@ -4,6 +4,6 @@ node {
     }
     stage('Compile') { 
 	    maven: 'maven'
-	    sh "mvn clean install"
+	    sh "maven clean install"
     } 
 }
